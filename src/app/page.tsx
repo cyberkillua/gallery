@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { db } from "../server/db";
 
 const mockUrls = [
   "https://utfs.io/f/pglkKhbB4exf63dz6tU9OID8npAgiq1BYh4VQ5CmRKNZSlvF",
@@ -14,6 +15,8 @@ const mockImages = mockUrls.map((url, index) => ({
 }));
 
 export default function HomePage() {
+  const posts = db.query.posts.findMany();
+
   return (
     <main className="">
       <div className="flex flex-wrap gap-4">
