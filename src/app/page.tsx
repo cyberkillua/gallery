@@ -25,7 +25,7 @@ export default async function HomePage() {
   return (
     <main className="">
       <SignedOut>
-        <div className="h-full w-full text-2xl">Please make you to sign in</div>
+        <div className="h-full w-full text-2xl">Please sign in the above</div>
       </SignedOut>
       <SignedIn>
         <Images />
