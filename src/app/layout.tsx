@@ -24,7 +24,6 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} `}>
       <body className="flex flex-col gap-4">
         <TopNav />
-
         {children}
       </body>
     </html>
