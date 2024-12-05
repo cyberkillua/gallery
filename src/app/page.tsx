@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { db } from "../server/db";
-// import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 export const dynamic = "force-dynamic";
 
@@ -26,14 +26,14 @@ export default async function HomePage() {
   return (
     <main className="">
       <Images />
-      {/* <SignedOut>
+      <SignedOut>
         <div className="h-full w-full text-center text-2xl">
           Please sign in the above
         </div>
       </SignedOut>
       <SignedIn>
         <Images />
-      </SignedIn> */}
+      </SignedIn>
     </main>
   );
 }
